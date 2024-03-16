@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vende-se</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Vende-se casa</h1>
+        </header>
+    
+        <main>
+            <h2>Fotos da Casa</h2>
+            <section class="fotos">
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="./img/primeira-casa/Casa.2.cozinha (1).jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        <div class="desc">Cozinha da primeira casa</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="./img/primeira-casa/Casa.2.quarto.1.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="./img/primeira-casa/Casa.2.quarto.2.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="./img/primeira-casa/Casa.2.sala.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+            </section>
+            <section class="fotos">
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="./img/primeira-casa/corredor.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="./img/primeira-casa/escada-embaixo.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="./img/primeira-casa/garagem.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+                
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="./img/primeira-casa/Casa.2.cozinha (1).jpeg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="./img/primeira-casa/Casa.2.quarto.1.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="./img/primeira-casa/Casa.2.quarto.2.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="./img/primeira-casa/Casa.2.sala.jpeg" style="width:100%">
+                    </div>
+                
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                  
+            </section>
+                
+            <section class="informacoes">
+                <h2>Detalhes da Casa</h2>
+                <ul>
+                    <li>Número de quartos: X</li>
+                    <li>Número de banheiros: X</li>
+                    <li>Área útil: X m²</li>
+                    <li>Localização: X</li>
+                    <li>Valor: R$ X.XXX.XXX,00</li>
+                </ul>
+            </section>
+    
+            <section class="contato">
+                <h2>Contato</h2>
+                <p>
+                    Interessado(a) em comprar a casa? Entre em contato comigo!
+                </p>
+                <form action="#">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+    
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </section>
+        </main>
+    
+        <script src="index.js"></script>
+        <footer>
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </footer>
+    </body>
+</html>
