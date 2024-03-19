@@ -5,125 +5,96 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vende-se</title>
         <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/d550d99c68.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <h1>Vende-se casa</h1>
-        </header>
-    
-        <main>
-            <h2>Fotos da Casa</h2>
-            <section class="fotos">
-                <div class="responsive">
-                    <div class="gallery">
-                        <img src="./img/primeira-casa/Casa.2.cozinha (1).jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                        <div class="desc">Cozinha da primeira casa</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <img src="./img/primeira-casa/Casa.2.quarto.1.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <img src="./img/primeira-casa/Casa.2.quarto.2.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <img src="./img/primeira-casa/Casa.2.sala.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-            </section>
-            <section class="fotos">
-                <div class="responsive">
-                    <div class="gallery">
-                        <img src="./img/primeira-casa/corredor.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <img src="./img/primeira-casa/escada-embaixo.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <img src="./img/primeira-casa/garagem.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-                
-                <!-- The Modal/Lightbox -->
-                <div id="myModal" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
-                    <div class="modal-content">
-                
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="./img/primeira-casa/Casa.2.cozinha (1).jpeg" style="width:100%">
-                    </div>
-                
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="./img/primeira-casa/Casa.2.quarto.1.png" style="width:100%">
-                    </div>
-                
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="./img/primeira-casa/Casa.2.quarto.2.png" style="width:100%">
-                    </div>
-                
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="./img/primeira-casa/Casa.2.sala.jpeg" style="width:100%">
-                    </div>
-                
-                    <!-- Next/previous controls -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                  
-            </section>
-                
-            <section class="informacoes">
-                <h2>Detalhes da Casa</h2>
-                <ul>
-                    <li>Número de quartos: X</li>
-                    <li>Número de banheiros: X</li>
-                    <li>Área útil: X m²</li>
-                    <li>Localização: X</li>
-                    <li>Valor: R$ X.XXX.XXX,00</li>
+            <nav>
+                <ul class="menu-principal">
+                    <li><a href="index.html">Geral</a></li>
+                    <li><a href="primeira-casa.html">Primeira casa</a></li>
+                    <li><a href="segunda-casa.html">Segunda casa</a></li>
                 </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Detalhes da Casa</h2>
+            <section class="informacoes">
+                <div class="list">
+                    <ul>
+                        <li>
+                            <span class="">
+                                <i class="fa-solid fa-location-dot"></i>
+                            Endereço</span>: Rua Urca, Parque do Agreste, Vargem Grande Paulista - SP
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <span> Valor:</span>
+                            R$ 500.000,00
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-road"></i> Perto do <a href="https://www.shoppingcentralpark.net.br/" target="_blank">shopping</a>, escola municipal, escola estadual, mercado São Roque, diversas drogarias.</li>
+                        <li>
+                            <i class="fa-solid fa-ruler"></i>
+                            <span>Área útil:</span> 400 m²
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-car"></i> 2 vagas na garagem e portão automático
+                        </li>
+                    </ul>
+                </div>
+
+                <h2>Casa 1</h2>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-bed"></i> 2 quartos
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-toilet-paper"></i> 1 banheiro
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-faucet"></i> Cozinha
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-couch"></i> Sala
+                        </li>
+                    </ul>
+                </div>
+
+                <h2>Casa 2</h2>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-bed"></i> 4 quartos
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-toilet-paper"></i> 1 banheiro
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-faucet"></i> Cozinha
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-couch"></i> Sala
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-sun"></i> Varanda
+                        </li>
+                    </ul>
+                </div>
+
             </section>
     
             <section class="contato">
                 <h2>Contato</h2>
                 <p>
-                    Interessado(a) em comprar a casa? Entre em contato comigo!
+                    Ficou interessado? Me mande uma mensagem no WhatsApp ou me ligue.
                 </p>
-                <form action="#">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-    
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" required>
-    
-                    <button type="submit">Enviar mensagem</button>
-                </form>
+                <p class="phone">
+                    <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5511997013152">(11) 99701-3152</a>
+                </p>
             </section>
         </main>
     
